@@ -15,10 +15,6 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-.admin-dropdown {
-  left: auto !important;
-  right: 0 !important;
-}
 /* top navbar end ================== */
 
 /* Sidebar start =================== */

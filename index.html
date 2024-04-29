@@ -73,12 +73,12 @@
                 />
                 Admin
               </a>
-              <ul class="dropdown-menu end-0 admin-dropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu end-0 admin-dropdown dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Logout</a>
                 </li>
               </ul>
             </li>
@@ -274,7 +274,8 @@
     <!-- main content start ================== -->
     <main class="mt-1 pt-3">
       <div class="container-fluid">
-        <ro class="row">
+        <!-- Cards -->
+        <div class="row">
           <div class="col-md-12">
             <h4 class="fw-bold text-uppercase">Dashboard</h4>
             <p>Statistics of the system</p>
@@ -282,7 +283,9 @@
           <div class="col-md-3 py-2 py-md-0">
             <div class="card">
               <div class="card-body text-center">
-                <h5 class="card-title text-uppercase text-muted">Total books</h5>
+                <h5 class="card-title text-uppercase text-muted">
+                  Total books
+                </h5>
                 <h1 class="fw-semibold">250</h1>
                 <a
                   href="#"
@@ -295,7 +298,9 @@
           <div class="col-md-3 py-2 py-md-0">
             <div class="card">
               <div class="card-body text-center">
-                <h5 class="card-title text-uppercase text-muted">Total students</h5>
+                <h5 class="card-title text-uppercase text-muted">
+                  Total students
+                </h5>
                 <h1 class="fw-semibold">100</h1>
                 <a
                   href="#"
@@ -308,7 +313,9 @@
           <div class="col-md-3 py-2 py-md-0">
             <div class="card">
               <div class="card-body text-center">
-                <h5 class="card-title text-uppercase text-muted">Total revenue</h5>
+                <h5 class="card-title text-uppercase text-muted">
+                  Total revenue
+                </h5>
                 <h1 class="fw-semibold">$ 2,52,500</h1>
                 <a
                   href="#"
@@ -321,13 +328,242 @@
           <div class="col-md-3 py-2 py-md-0">
             <div class="card">
               <div class="card-body text-center">
-                <h5 class="card-title text-uppercase text-muted">Total books loan</h5>
+                <h5 class="card-title text-uppercase text-muted">
+                  Total books loan
+                </h5>
                 <h1 class="fw-semibold">105</h1>
                 <a
                   href="#"
                   class="card-link text-decoration-none text-capitalize"
                   >view more</a
                 >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active text-uppercase"
+                  id="new-students-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#new-students"
+                  type="button"
+                  role="tab"
+                  aria-controls="new-students"
+                  aria-selected="true"
+                >
+                  new students
+                </button>
+                <button
+                  class="nav-link text-uppercase"
+                  id="recent-loans-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#recent-loans"
+                  type="button"
+                  role="tab"
+                  aria-controls="recent-loans"
+                  aria-selected="false"
+                >
+                  recent loans
+                </button>
+                <button
+                  class="nav-link text-uppercase"
+                  id="reacent-subscriptions-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#reacent-subscriptions"
+                  type="button"
+                  role="tab"
+                  aria-controls="reacent-subscriptions"
+                  aria-selected="false"
+                >
+                  recent subscriptions
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="new-students"
+                role="tabpanel"
+                aria-labelledby="new-students-tab"
+                tabindex="0"
+              >
+                <table class="table">
+                  <thead class="table-light text-capitalize">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">preparing for</th>
+                      <th scope="col">registered on</th>
+                      <th scope="col">status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John Doe</td>
+                      <td>GRE</td>
+                      <td>2024-04-28</td>
+                      <td>
+                        <span class="badge text-bg-success">Active</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jane Smith</td>
+                      <td>TOEFL</td>
+                      <td>2024-04-25</td>
+                      <td>
+                        <span class="badge text-bg-success">Active</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Michael Johnson</td>
+                      <td>GMAT</td>
+                      <td>2024-04-20</td>
+                      <td>
+                        <span class="badge text-bg-danger">Inactive</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Alice Brown</td>
+                      <td>IELTS</td>
+                      <td>2024-04-24</td>
+                      <td>
+                        <span class="badge text-bg-success">Active</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="recent-loans"
+                role="tabpanel"
+                aria-labelledby="recent-loans-tab"
+                tabindex="0"
+              >
+                <table class="table">
+                  <thead class="table-light text-capitalize">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">book mame</th>
+                      <th scope="col">student name</th>
+                      <th scope="col">loan date</th>
+                      <th scope="col">due date</th>
+                      <th scope="col">status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>The Great Gatsby</td>
+                      <td>John Doe</td>
+                      <td>2024-04-10</td>
+                      <td>2024-05-01</td>
+                      <td>
+                        <span class="badge text-bg-success">Success</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>To Kill a Mockingbird</td>
+                      <td>Jane Smith</td>
+                      <td>2024-04-15</td>
+                      <td>2024-05-06</td>
+                      <td>
+                        <span class="badge text-bg-success">Success</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Pride and Prejudice</td>
+                      <td>Alice Brown</td>
+                      <td>2024-04-18</td>
+                      <td>2024-05-09</td>
+                      <td>
+                        <span class="badge text-bg-danger">Returned</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>The Catcher in the Rye</td>
+                      <td>Emily Davis</td>
+                      <td>2024-04-25</td>
+                      <td>2024-05-16</td>
+                      <td>
+                        <span class="badge text-bg-success">Success</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="reacent-subscriptions"
+                role="tabpanel"
+                aria-labelledby="reacent-subscriptions-tab"
+                tabindex="0"
+              >
+                <table class="table">
+                  <thead class="table-light text-capitalize">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">student mame</th>
+                      <th scope="col">amount</th>
+                      <th scope="col">start date</th>
+                      <th scope="col">end date</th>
+                      <th scope="col">status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John Doe</td>
+                      <td>$500</td>
+                      <td>2024-04-01</td>
+                      <td>2024-05-01</td>
+                      <td>
+                        <span class="badge text-bg-success">Success</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jane Smith</td>
+                      <td>$700</td>
+                      <td>2024-04-05</td>
+                      <td>2024-05-05</td>
+                      <td>
+                        <span class="badge text-bg-success">Success</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Michael Johnson</td>
+                      <td>$1000</td>
+                      <td>2024-04-10</td>
+                      <td>2024-05-10</td>
+                      <td>
+                        <span class="badge text-bg-success">Success</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Alice Brown</td>
+                      <td>$300</td>
+                      <td>2024-04-15</td>
+                      <td>2024-05-15</td>
+                      <td>
+                        <span class="badge text-bg-danger">Expired</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
