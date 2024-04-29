@@ -31,7 +31,7 @@ body {
 .sidebar-link[aria-expanded="true"] .right-icon {
   transform: rotate(180deg);
 }
-@media (min-width: 992px) {
+@media (min-width: 992px){
   .sidebar-nav {
     transform: none !important;
     visibility: visible !important;
@@ -42,6 +42,9 @@ body {
   }
   .offcanvas-backdrop {
     display: none !important;
+  }
+  main{
+    margin-left: var(--sidebar-width);
   }
 }
 /* Sidebar end =================== */
