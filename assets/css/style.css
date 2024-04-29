@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --bg-color: #f5f5f5;
+  --sidebar-width: 270px;
+  --navbar-height: 56px;
+}
 body {
-  background: #f5f5f5;
+  background: var(--bg-color);
   font-family: "Lato", sans-serif;
 }
+/* top navbar start ================== */
 .admin-avatar {
   width: 30px;
   height: 30px;
@@ -13,3 +19,23 @@ body {
   left: auto !important;
   right: 0 !important;
 }
+/* top navbar end ================== */
+
+/* Sidebar start =================== */
+.sidebar-nav {
+  width: var(--sidebar-width) !important;
+}
+@media (min-width: 992px) {
+  .sidebar-nav {
+    transform: none !important;
+    visibility: visible !important;
+    top: var(--navbar-height) !important;
+  }
+  .sidebar-nav .btn-close {
+    display: none;
+  }
+  .offcanvas-backdrop {
+    display: none !important;
+  }
+}
+/* Sidebar end =================== */
